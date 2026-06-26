@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Management</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <div class="main-box">
+
+        <h1>📒 Notes Management</h1>
+
+        <p class="subtitle">
+            Organize your daily notes and ideas
+        </p>
+
+        <form action="/save-note" method="post">
+
+            <div class="date-section">
+                <label>📅 Select Date</label>
+                <input type="date" name="date" required>
+            </div>
+
+            <div class="note-section">
+                <label>📝 Daily Note</label>
+                <textarea
+                    name="note"
+                    placeholder="Write your note here..."
+                    required></textarea>
+            </div>
+
+            <button type="submit" class="save-btn">
+                Save Note
+            </button>
+
+        </form>
+
+        <a href="/notes" class="view-btn">
+            📋 View All Notes
+        </a>
+
+    </div>
+
+</body>
+</html>
